@@ -4,13 +4,47 @@
   border-radius: 0px;
 }
 
-#dashboard-bg {
-  margin-top: 20px;
-  background-color: grey;
-}
-
 .navbar {
   padding: 0px;
   margin: 0px;
   border-radius: 0px;
+}
+
+#dashboard-bg {
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: grey;
+  float: left;
+  width: 100%;
+}
+
+.tiles {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  float: left;
+  width: 70%;
+  height: 100%;
+  background-color: red;
+}
+
+.indiv-tile {
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.inner-tile {
+  background-color: black;
+}
+
+.alerts {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  float: right;
+  width: 25%;
+  height: 100%;
+  background-color: blue;
 }
