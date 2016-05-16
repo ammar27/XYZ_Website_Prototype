@@ -22,6 +22,10 @@
   margin-right: 50px;
 }
 
+#navbar-logo {
+  padding-left: 10px;
+}
+
 #dashboard-bg {
   margin-top: 0px;
   padding-left: 5px;
@@ -60,12 +64,12 @@
   box-shadow: 0 0 5px 1px #CFCFCF;
   cursor: pointer;
   transition-property: background, color;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-timing-function: linear;
 }
 
 .inner-tile:hover {
-  background-color: #0080ff;
+  background-color: #353942;
   color: white;
 }
 
@@ -76,10 +80,15 @@
   height: 120px;
   text-align: left;
   box-shadow: 0 9px 10px -10px #CFCFCF;
+  cursor: pointer;
+  transition-property: background, color;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
 }
 
 .inner-alert:hover {
-  background-color: #0080ff;
+  background-color: #353942;
+  color: #ffffff;
 }
 
 IMG.displayed {
@@ -116,6 +125,17 @@ IMG.displayed {
 
 .glyphicon {
   font-size: 20px;
+}
+
+.glyphicon-alert {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.badge {
+  margin-bottom: 2px;
+  margin-left: 2px;
+  background-color: #e7604a;
 }
 
 .site-map {
