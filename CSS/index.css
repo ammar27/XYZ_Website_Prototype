@@ -6,15 +6,24 @@
 
 .navbar {
   padding: 0px;
+  padding-right: 20px;
+  padding-top: 25px;
   margin: 0px;
   border-radius: 0px;
+  height: 100px;
+  box-shadow: 0 0 5px #919191;
+}
+
+.navbar-default {
+  background-color: #ffffff;
 }
 
 #dashboard-bg {
   margin-top: 0px;
   padding-left: 5px;
   padding-right: 5px;
-  background-color: #f2f2f2;
+  padding-top: 15px;
+  background-color: #f3f3f3;
   float: left;
   width: 100%;
 }
@@ -26,7 +35,8 @@
   float: left;
   width: 70%;
   height: 100%;
-  border: 2px solid #d9d9d9;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px 1px #CFCFCF;
 }
 
 .indiv-tile {
@@ -37,9 +47,26 @@
 
 .inner-tile {
   padding: 10px;
-  background-color: #0d0d0d;
+  background-color: #b6b6b6;
   height: 160px;
   text-align: center;
+}
+
+.inner-tile:hover {
+  background-color: #0080ff;
+}
+
+.inner-alert {
+  padding: 10px;
+  margin-bottom: 10px;
+  padding-top: 15px;
+  height: 120px;
+  text-align: left;
+  box-shadow: 0 9px 10px -10px #CFCFCF;
+}
+
+.inner-alert:hover {
+  background-color: #0080ff;
 }
 
 IMG.displayed {
@@ -53,6 +80,16 @@ IMG.displayed {
   color: white;
 }
 
+.tile-title {
+  font-size: 20px;
+  padding-left: 17px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 9px 10px -10px #CFCFCF;
+  color: black;
+}
+
 .alerts {
   margin-top: 10px;
   margin-right: 10px;
@@ -60,5 +97,4 @@ IMG.displayed {
   float: right;
   width: 25%;
   height: 100%;
-  background-color: #e6e6e6;
 }
