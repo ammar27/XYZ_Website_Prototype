@@ -7,15 +7,19 @@
 .navbar {
   padding: 0px;
   padding-right: 20px;
-  padding-top: 25px;
+  padding-top: 10px;
   margin: 0px;
   border-radius: 0px;
-  height: 100px;
+  height: 90px;
   box-shadow: 0 0 5px #919191;
 }
 
 .navbar-default {
   background-color: #ffffff;
+}
+
+.nav-text {
+  margin-right: 50px;
 }
 
 #dashboard-bg {
@@ -97,4 +101,8 @@ IMG.displayed {
   float: right;
   width: 25%;
   height: 100%;
+}
+
+.glyphicon {
+  font-size: 20px;
 }
