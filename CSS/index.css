@@ -71,6 +71,21 @@
   transition-timing-function: linear;
 }
 
+.lock-tile {
+  padding: 10px;
+  /*background-color: #f9f9f9; Light bg*/
+  background-color: #f9f9f9;
+  height: 130px;
+  text-align: center;
+  color: black;
+  box-shadow: 0 0 5px 1px #CFCFCF;
+  cursor: pointer;
+  transition-property: background, color;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+
 .inner-tile:hover {
   background-color: #353942;
   color: white;
