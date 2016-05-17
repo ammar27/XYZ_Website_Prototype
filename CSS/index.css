@@ -135,6 +135,12 @@ IMG.displayed {
   margin-right: 10px;
 }
 
+.glyphicon-chevron-left {
+  font-size: 16px;
+  margin-right: 10px;
+  color: white;
+}
+
 .badge {
   margin-bottom: 2px;
   margin-left: 2px;
@@ -146,4 +152,8 @@ IMG.displayed {
   float: left;
   width: 100%;
   background-color: #ffffff;
+}
+
+#lock-screen {
+  display: none;
 }
