@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>XYZ Company</title>
+  <meta charset="utf-8" />
+  <!-- Adding bootstrap. Source: http://www.w3schools.com/bootstrap/bootstrap_get_started.asp -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- Importing javascript to enable site navigation-->
+  <script src="index.js"></script>
+  <!-- Adding custom style sheet -->
+  <link rel="stylesheet" href="CSS/index.css"/>
+
+</head>
+<body>
+  <!-- Adding navigation bar at top of document -->
+  <div class="container-fluid">
+    <nav class="navbar navbar-default">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html" id="navbar-logo">
+          <img src="Images/XYZ-logo.png" alt="<Missing Image>" width="17%" height="auto">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">
+            <div><span class="glyphicon glyphicon-dashboard"></span></div>
+            <div class="nav-text">Dashboard</div>
+          </a></li>
+          <li><a href="#">
+            <div><span class="glyphicon glyphicon-user"></span></div>
+            <div class="nav-text">About Us</div>
+          </a></li>
+          <li><a href="#">
+            <div><span class="glyphicon glyphicon-modal-window"></span></div>
+            <div class="nav-text">News</div>
+          </a></li>
+          <li><a href="#">
+            <div><span class="glyphicon glyphicon-shopping-cart"></span></div>
+            <div class="nav-text">Products</div>
+          </a></li>
+          <li><a href="#">
+            <div><span class="glyphicon glyphicon-log-out"></span></div>
+            <div class="nav-text">Log Out</div>
+          </a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Dashboard section of page -->
+  <div class="container-fluid" id="dashboard-bg">
+    <!-- Tiles section -->
+    <div class="tiles" id="dashboard-screen">
+      <div class="tile-title"> Dashboard </div>
+      <div id="row-1">
+        <div class="col-sm-4 indiv-tile">
+          <div class="inner-tile" id="door-tile">
+            <img src="Images/door-icon.png" class="displayed" alt="<Missing Image>" width="auto" height="50%">
+            <h4 id="tile-text">Door Locks</h4>
+          </div>
+        </div>
+        <div class="col-sm-4 indiv-tile">
+          <div class=inner-tile>
+            <img src="Images/window-icon.png" class="displayed" alt="<Missing Image>" width="auto" height="50%">
+            <h4 id="tile-text">Window Locks</h4>
+          </div>
+        </div>
+        <div class="col-sm-4 indiv-tile">
+          <div class=inner-tile>
+            <img src="Images/blinds-icon.png" class="displayed" alt="<Missing Image>" width="auto" height="50%">
+            <h4 id="tile-text">Blinds Control</h4>
+          </div>
+        </div>
+      </div>
+
+      <div id="row-2">
+        <div class="col-sm-4 indiv-tile">
+          <div class=inner-tile>
+            <img src="Images/motion-sensor-icon.png" class="displayed" alt="<Missing Image>" width="auto" height="50%">
+            <h4 id="tile-text">Motion Sensors</h4>
+          </div>
+        </div>
+        <div class="col-sm-4 indiv-tile">
+        <div class=inner-tile>
+          <img src="Images/surveillance-icon.png" class="displayed" alt="<Missing Image>" width="auto" height="50%">
+          <h4 id="tile-text">Surveillance</h4>
+        </div>
+      </div>
+        <div class="col-sm-4 indiv-tile">
+          <div class=inner-tile>
+            <img src="Images/temperature-icon.png" class="displayed" alt="<Missing Image>" width="auto" height="50%">
+            <h4 id="tile-text">Temperature Control</h4>
+          </div>
+        </div>
+      </div>
+
+      <div id="row-3">
+        <div class="col-sm-4 indiv-tile">
+          <div class=inner-tile>
+            <img src="Images/lighting-icon.png" class="displayed" alt="<Missing Image>" width="auto" height="50%">
+            <h4 id="tile-text">Lighting</h4>
+          </div>
+        </div>
+        <div class="col-sm-4 indiv-tile">
+          <div class=inner-tile>
+            <img src="Images/analytics-icon.png" class="displayed" alt="<Missing Image>" width="auto" height="50%">
+            <h4 id="tile-text">Analytics</h4>
+          </div>
+        </div>
+        <div class="col-sm-4 indiv-tile">
+          <div class=inner-tile>
+            <img src="Images/maintenance-icon.png" class="displayed" alt="<Missing Image>" width="auto" height="50%">
+            <h4 id="tile-text">Maintenance</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Alerts Section -->
+    <div class="alerts tiles">
+      <div class="tile-title"> <span class="glyphicon glyphicon-alert"></span> Alerts <span class="badge">3</span></div>
+      <div class="indiv-tile">
+        <div class="inner-alert">
+          <div class="col-xs-6 col-md-4"> <img src="Images/door-icon.png" class="displayed" alt="<Missing Image>" width="60%" height="auto"> </div>
+          <div class="col-xs-12 col-md-8">
+            <p> Front Door </p>
+            <p> Unlocked </p>
+            <p><a href="#"> Remove Alert </a></p>
+          </div>
+        </div>
+        <div class="inner-alert">
+          <div class="col-xs-6 col-md-4"> <img src="Images/motion-sensor-icon.png" class="displayed" alt="<Missing Image>" width="100%" height="auto"> </div>
+          <div class="col-xs-12 col-md-8">
+            <p> Motion Detected </p>
+            <p> Living Room </p>
+            <p><a href="#"> Remove Alert </a></p>
+          </div>
+        </div>
+        <div class="inner-alert">
+          <div class="col-xs-6 col-md-4"> <img src="Images/maintenance-icon.png" class="displayed" alt="<Missing Image>" width="90%" height="auto"> </div>
+          <div class="col-xs-12 col-md-8">
+            <p> Scheduled Maintenance </p>
+            <p> Sunday 22 April </p>
+            <p> 11:59 pm </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tiles" id="lock-screen">
+    <div class="tile-title"><a href="index.html"><span class="glyphicon glyphicon-chevron-left"></span></a> Door Locks</div>
+    <div id="row-1">
+      <div class="col-sm-4 indiv-tile">
+        <div class="lock-tiles">
+          <h4 class="col-md-8" id="tile-text">Front Door</h4>
+          <img src="Images/locked-icon.png" class="lock-img pull-right col-md-4" alt="<Missing Image>" width="auto" height="60%">
+        </div>
+      </div>
+      <div class="col-sm-4 indiv-tile">
+        <div class=inner-tile>
+          <img src="Images/window-icon.png" class="displayed" alt="<Missing Image>" width="auto" height="50%">
+          <h4 id="tile-text">Window Locks</h4>
+        </div>
+      </div>
+      <div class="col-sm-4 indiv-tile">
+        <div class=inner-tile>
+          <img src="Images/blinds-icon.png" class="displayed" alt="<Missing Image>" width="auto" height="50%">
+          <h4 id="tile-text">Blinds Control</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+<footer>
+  <!-- Footer Section -->
+  <div class="container-fluid">
+    <div class="site-map">
+      <p>Website Prototype for XYZ</p>
+      <p>Developed by Ammar Bagasrawala</p>
+    </div>
+  </div>
+</footer>
+</html>
