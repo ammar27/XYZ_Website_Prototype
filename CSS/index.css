@@ -139,7 +139,9 @@ IMG.displayed {
 }
 
 .glyphicon {
-  font-size: 20px;
+  font-size: 16px;
+  margin-right: 5px;
+  vertical-align: top;
 }
 
 .glyphicon-alert {
