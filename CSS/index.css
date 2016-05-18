@@ -125,6 +125,25 @@
   margin: auto;
 }
 
+#motion-timer-text {
+  margin: 0;
+  margin-top: 100px;
+  background-color: #e4e3e3;
+  font-size: 12px;
+  text-align: center;
+  color: #353942;
+  padding: 8px;
+  cursor: pointer;
+  transition-property: background, color;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+#motion-timer-text:hover {
+  background-color: #353942;
+  color: #ffffff;
+}
+
 .inner-tile:hover {
   background-color: #353942;
   color: white;
