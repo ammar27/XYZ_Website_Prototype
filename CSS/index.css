@@ -120,6 +120,13 @@
   font-size: 14px;
 }
 
+#surveillance-image {
+  display: block;
+  margin: auto;
+  margin-bottom: 7px;
+  margin-top: -5px;
+}
+
 #lock-image {
   display: block;
   margin: auto;
@@ -140,6 +147,24 @@
 }
 
 #motion-timer-text:hover {
+  background-color: #353942;
+  color: #ffffff;
+}
+
+#surveillance-text {
+  margin: 0;
+  background-color: #29c7ca;
+  font-size: 12px;
+  text-align: center;
+  color: #353942;
+  padding: 8px;
+  cursor: pointer;
+  transition-property: background, color;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+#surveillance-text:hover {
   background-color: #353942;
   color: #ffffff;
 }
@@ -235,6 +260,24 @@ IMG.displayed {
 
 #lock-screen {
   display: none;
+}
+
+#motion-sensors-screen {
+  display: none;
+}
+
+#surveillance-screen {
+    display: none;
+}
+
+.surveillance-tile {
+  padding: 0px;
+  margin-top: 45px;
+  padding-top: 0px;
+  background-color: #f9f9f9;
+  height: 100%;
+  color: black;
+  box-shadow: 0 0 5px 1px #CFCFCF;
 }
 
 /* On/off toggle slider components obtained from: http://www.w3schools.com/howto/howto_css_switch.asp */
