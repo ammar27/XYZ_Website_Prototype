@@ -80,18 +80,56 @@
 }
 
 .lock-tile {
-  padding: 10px;
+  padding: 0px;
+  padding-top: 45px;
   background-color: #f9f9f9;
-  height: 130px;
-  text-align: center;
+  height: 100%;
+  text-align: left;
   color: black;
   box-shadow: 0 0 5px 1px #CFCFCF;
-  cursor: pointer;
-  transition-property: background, color;
-  transition-duration: 0.3s;
-  transition-timing-function: linear;
 }
 
+.lock-tile-header {
+  background-color: #353942;
+}
+
+#lock-tile-header-text {
+  font-size: 14px;
+  margin-top: -45px;
+  padding: 8px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/*
+
+#lock-tile-footer-text {
+  font-size: 14px;
+  margin-top: 80px;
+  padding-top: 30px;
+  margin-bottom: 0px;
+  text-align: center;
+  cursor: pointer;
+  color: #353942;
+  transition: margin 0.3s ease-out;
+}
+
+#lock-tile-footer-text:hover {
+  color: #29c7ca;
+  margin-left: 20px;
+}*/
+
+#front-door-lock {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+#lock-image {
+  display: block;
+  margin: auto;
+}
 
 .inner-tile:hover {
   background-color: #353942;
@@ -179,4 +217,55 @@ IMG.displayed {
 
 #lock-screen {
   display: none;
+}
+
+/* On/off toggle slider components obtained from: http://www.w3schools.com/howto/howto_css_switch.asp */
+.switch {
+  position: relative;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 80px;
+  height: 25px;
+}
+
+.switch input {
+  display:none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #29c7ca;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #29c7ca;
+}
+
+input:checked + .slider:before {
+  transform: translateX(53px);
 }
