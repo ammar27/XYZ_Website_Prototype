@@ -142,44 +142,56 @@
 
   <!-- Lock screen which is hidden by default -->
   <div class="tiles" id="lock-screen">
-    <div class="tile-title"><a href="index.html"><span class="glyphicon glyphicon-chevron-left"></span></a> Door Locks</div>
+    <div class="tile-title"><a><span id="door-locks-back-button" class="glyphicon glyphicon-chevron-left"></span></a> Door Locks</div>
     <div id="row-1">
       <div class="col-sm-4 indiv-tile">
         <div class="lock-tile">
           <div class="lock-tile-header"><h4 id="lock-tile-header-text">Front Door</h4></div>
-          <img id="lock-image" src="Images/locked-icon.png" alt="<Missing Image>" width="25%">
+          <img id="lock-image" src="Images/locked-icon.png" alt="<Missing Image>" width="15%">
           <div>
-            <h4 id="front-door-lock">LOCKED</h4>
+            <h4 id="front-door-lock">UNLOCKED</h4>
             <label class="switch"><input type="checkbox"><div class="slider round"></div></label>
           </div>
+          <div class="lock-tile-header"><h4 id="lock-timer-text">Set Timer<span class="glyphicon glyphicon-chevron-right"></span></h4></div>
         </div>
       </div>
       <div class="col-sm-4 indiv-tile">
-        <div class=inner-tile>
-          <img src="Images/window-icon.png" class="displayed" alt="<Missing Image>" width="auto" height="50%">
-          <h4 id="tile-text">Window Locks</h4>
+        <div class="lock-tile">
+          <div class="lock-tile-header"><h4 id="lock-tile-header-text">Back Door</h4></div>
+          <img id="lock-image" src="Images/locked-icon.png" alt="<Missing Image>" width="15%">
+          <div>
+            <h4 id="front-door-lock">UNLOCKED</h4>
+            <label class="switch"><input type="checkbox"><div class="slider round"></div></label>
+          </div>
+          <div class="lock-tile-header"><h4 id="lock-timer-text">Set Timer<span class="glyphicon glyphicon-chevron-right"></span></h4></div>
         </div>
       </div>
       <div class="col-sm-4 indiv-tile">
-        <div class=inner-tile>
-          <img src="Images/blinds-icon.png" class="displayed" alt="<Missing Image>" width="auto" height="50%">
-          <h4 id="tile-text">Blinds Control</h4>
+        <div class="lock-tile">
+          <div class="lock-tile-header"><h4 id="lock-tile-header-text">Garage Door</h4></div>
+          <img id="lock-image" src="Images/locked-icon.png" alt="<Missing Image>" width="15%">
+          <div>
+            <h4 id="front-door-lock">UNLOCKED</h4>
+            <label class="switch"><input type="checkbox"><div class="slider round"></div></label>
+          </div>
+          <div class="lock-tile-header"><h4 id="lock-timer-text">Set Timer<span class="glyphicon glyphicon-chevron-right"></span></h4></div>
+        </div>
+      </div>
+    </div>
+    <div id="row-2">
+      <div class="col-sm-4 indiv-tile">
+        <div class="lock-tile">
+          <div class="lock-tile-header"><h4 id="lock-tile-header-text">Deck Door</h4></div>
+          <img id="lock-image" src="Images/locked-icon.png" alt="<Missing Image>" width="15%">
+          <div>
+            <h4 id="front-door-lock">UNLOCKED</h4>
+            <label class="switch"><input type="checkbox"><div class="slider round"></div></label>
+          </div>
+          <div class="lock-tile-header"><h4 id="lock-timer-text">Set Timer<span class="glyphicon glyphicon-chevron-right"></span></h4></div>
         </div>
       </div>
     </div>
   </div>
-
-<!--<div class="col-sm-4 indiv-tile">
-  <div class="lock-tile">
-    <div class="lock-tile-header"><h4 id="lock-tile-header-text">Front Door</h4></div>
-    <div class="inner-lock-tile col-xs-8">
-      <h4 id="front-door-lock">LOCKED</h4>
-      <label class="switch"><input type="checkbox"><div class="slider round"></div></label>
-    </div>
-    <img id="lock-image" src="Images/locked-icon.png" class="col-xs-4" alt="<Missing Image>">
-    <div><h4 id="lock-tile-footer-text" href="#">Set Timer<span class="glyphicon glyphicon-chevron-right"></span></h4></div>
-  </div>
-</div>-->
 
 
 

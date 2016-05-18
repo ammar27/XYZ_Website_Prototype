@@ -84,46 +84,40 @@
   padding-top: 45px;
   background-color: #f9f9f9;
   height: 100%;
-  text-align: left;
   color: black;
   box-shadow: 0 0 5px 1px #CFCFCF;
 }
 
-.lock-tile-header {
-  background-color: #353942;
-}
-
 #lock-tile-header-text {
+  background-color: #353942;
   font-size: 14px;
   margin-top: -45px;
-  padding: 8px;
+  padding: 10px;
   text-align: center;
   color: #ffffff;
 }
 
-/*
-
-#lock-tile-footer-text {
-  font-size: 14px;
-  margin-top: 80px;
-  padding-top: 30px;
-  margin-bottom: 0px;
+#lock-timer-text {
+  background-color: #e4e3e3;
+  font-size: 12px;
   text-align: center;
-  cursor: pointer;
   color: #353942;
-  transition: margin 0.3s ease-out;
+  padding: 8px;
+  margin: 0;
+  cursor: pointer;
+  transition-property: background, color;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
 }
 
-#lock-tile-footer-text:hover {
-  color: #29c7ca;
-  margin-left: 20px;
-}*/
+#lock-timer-text:hover {
+  background-color: #353942;
+  color: #ffffff;
+}
 
 #front-door-lock {
   text-align: center;
-  margin-bottom: 10px;
   font-size: 14px;
-  margin-top: 20px;
 }
 
 #lock-image {
@@ -200,6 +194,11 @@ IMG.displayed {
   font-size: 16px;
   margin-right: 10px;
   color: white;
+}
+
+.glyphicon-chevron-right {
+  font-size: 10px;
+  margin-left: 5px;
 }
 
 .badge {
