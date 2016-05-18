@@ -29,6 +29,15 @@
   margin-right: 30px;
 }
 
+#nav-text {
+  transition: padding 0.3s ease-out;
+}
+
+#nav-text:hover {
+  padding-top: 10px;
+  color: #29c7ca;
+}
+
 #dashboard-bg {
   margin-top: 0px;
   padding-left: 5px;
