@@ -1,28 +1,23 @@
 $(document).ready(function() {
   // Function for replacing dashboard div with door locks div
   $("#door-tile").click(function () {
-    //$("#dashboard-screen").replaceWith(document.getElementById("lock-screen"));
     document.getElementById("lock-screen").style.display="block";
     document.getElementById("dashboard-screen").style.display="none";
-    //$("#dashboard-screen").load("doorLockScreen.html");
   });
 
   // Function for replacing dashboard div with motion sensor div
   $("#motion-sensors-tile").click(function () {
-    //$("#dashboard-screen").replaceWith(document.getElementById("motion-sensors-screen"));
     document.getElementById("motion-sensors-screen").style.display="block";
     document.getElementById("dashboard-screen").style.display="none";
-    //$("#dashboard-screen").load("doorLockScreen.html");
   });
 
   // Function for replacing dashboard div with surveillance div
   $("#surveillance-tile").click(function () {
-    //$("#dashboard-screen").replaceWith(document.getElementById("surveillance-screen"));
     document.getElementById("surveillance-screen").style.display="block";
     document.getElementById("dashboard-screen").style.display="none";
-    //$("#dashboard-screen").load("doorLockScreen.html");
   });
 
+  // Function for replacing current screen with the dashboard screen
   $(".back-button").click(function () {
     document.getElementById("dashboard-screen").style.display="block";
     document.getElementById("surveillance-screen").style.display="none";
@@ -30,6 +25,7 @@ $(document).ready(function() {
     document.getElementById("lock-screen").style.display="none";
   });
 
+  // Obtains properties for door locks and changes state based on previous state
   $("#front-door-lock-slider").click(function () {
     var lock = document.getElementById("front-door-lock");
     if (lock.innerHTML === "LOCKED") { lock.innerHTML = "UNLOCKED"; } else { lock.innerHTML = "LOCKED"; }
@@ -50,4 +46,45 @@ $(document).ready(function() {
     if (lock.innerHTML === "LOCKED") { lock.innerHTML = "UNLOCKED"; } else { lock.innerHTML = "LOCKED"; }
   });
 
+  //Obtains properties for motion sensor switches and changes state based on previous state
+  $("#motion-living-slider").click(function () {
+    var switchText = document.getElementById("motion-living-text");
+    if (switchText.innerHTML === "ON") { switchText.innerHTML = "OFF"; } else { switchText.innerHTML = "ON"; }
+  });
+
+  $("#motion-bed-slider").click(function () {
+    var switchText = document.getElementById("motion-bed-text");
+    if (switchText.innerHTML === "ON") { switchText.innerHTML = "OFF"; } else { switchText.innerHTML = "ON"; }
+  });
+
+  $("#motion-entrance-slider").click(function () {
+    var switchText = document.getElementById("motion-entrance-text");
+    if (switchText.innerHTML === "ON") { switchText.innerHTML = "OFF"; } else { switchText.innerHTML = "ON"; }
+  });
+
+  $("#motion-kitchen-slider").click(function () {
+    var switchText = document.getElementById("motion-kitchen-text");
+    if (switchText.innerHTML === "ON") { switchText.innerHTML = "OFF"; } else { switchText.innerHTML = "ON"; }
+  });
+
+  //Obtains properties for surveillance switches and changes state based on previous state
+  $("#surv-living-slider").click(function () {
+    var switchText = document.getElementById("surv-living-text");
+    if (switchText.innerHTML === "ON") { switchText.innerHTML = "OFF"; } else { switchText.innerHTML = "ON"; }
+  });
+
+  $("#surv-bed-slider").click(function () {
+    var switchText = document.getElementById("surv-bed-text");
+    if (switchText.innerHTML === "ON") { switchText.innerHTML = "OFF"; } else { switchText.innerHTML = "ON"; }
+  });
+
+  $("#surv-entrance-slider").click(function () {
+    var switchText = document.getElementById("surv-entrance-text");
+    if (switchText.innerHTML === "ON") { switchText.innerHTML = "OFF"; } else { switchText.innerHTML = "ON"; }
+  });
+
+  $("#surv-kitchen-slider").click(function () {
+    var switchText = document.getElementById("surv-kitchen-text");
+    if (switchText.innerHTML === "ON") { switchText.innerHTML = "OFF"; } else { switchText.innerHTML = "ON"; }
+  });
 });
