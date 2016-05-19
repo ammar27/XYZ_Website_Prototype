@@ -29,4 +29,25 @@ $(document).ready(function() {
     document.getElementById("motion-sensors-screen").style.display="none";
     document.getElementById("lock-screen").style.display="none";
   });
+
+  $("#front-door-lock-slider").click(function () {
+    var lock = document.getElementById("front-door-lock");
+    if (lock.innerHTML === "LOCKED") { lock.innerHTML = "UNLOCKED"; } else { lock.innerHTML = "LOCKED"; }
+  });
+
+  $("#back-door-lock-slider").click(function () {
+    var lock = document.getElementById("back-door-lock");
+    if (lock.innerHTML === "LOCKED") { lock.innerHTML = "UNLOCKED"; } else { lock.innerHTML = "LOCKED"; }
+  });
+
+  $("#garage-door-lock-slider").click(function () {
+    var lock = document.getElementById("garage-door-lock");
+    if (lock.innerHTML === "LOCKED") { lock.innerHTML = "UNLOCKED"; } else { lock.innerHTML = "LOCKED"; }
+  });
+
+  $("#deck-door-lock-slider").click(function () {
+    var lock = document.getElementById("deck-door-lock");
+    if (lock.innerHTML === "LOCKED") { lock.innerHTML = "UNLOCKED"; } else { lock.innerHTML = "LOCKED"; }
+  });
+
 });

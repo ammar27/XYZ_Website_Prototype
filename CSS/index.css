@@ -116,7 +116,7 @@
   color: #ffffff;
 }
 
-#front-door-lock {
+.lock-unlock-text {
   text-align: center;
   font-size: 14px;
 }
