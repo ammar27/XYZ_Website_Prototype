@@ -39,28 +39,48 @@ $(document).ready(function() {
     items: {
       src: "Images/living-room.jpg"
     },
-    type: "image" // this is default type
+    type: "image",
+    image: {
+      titleSrc: function (item) {
+        return "Living Room Camera";
+      }
+    }
   });
 
   $("#entrance-enlarge").magnificPopup({
     items: {
       src: "Images/entrance.jpg"
     },
-    type: "image" // this is default type
+    type: "image",
+    image: {
+      titleSrc: function (item) {
+        return "Entrance Way Camera";
+      }
+    }
   });
 
   $("#kitchen-enlarge").magnificPopup({
     items: {
       src: "Images/kitchen.jpg"
     },
-    type: "image" // this is default type
+    type: "image",
+    image: {
+      titleSrc: function (item) {
+        return "Kitchen Camera";
+      }
+    }
   });
 
   $("#bedroom-enlarge").magnificPopup({
     items: {
       src: "Images/bedroom.jpg"
     },
-    type: "image" // this is default type
+    type: "image",
+    image: {
+      titleSrc: function (item) {
+        return "Bedroom Camera";
+      }
+    }
   });
 
   // Obtains properties for door locks and changes state based on previous state
