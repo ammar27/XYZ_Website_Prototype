@@ -311,7 +311,8 @@ IMG.displayed {
   padding: 20px;
   float: left;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #353942;
+  color: #ffffff;
 }
 
 #dashboard-screen {
