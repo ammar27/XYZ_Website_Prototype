@@ -1,4 +1,12 @@
 $(document).ready(function() {
+
+  // Setting up colours for all lock/unlock and on/off text in the screens
+  var text = document.getElementById("motion-living-text");
+  if (text.innerHTML === "ON") {
+    text.style.color = "blue";
+  }
+
+
   // Function for replacing dashboard div with door locks div
   $("#door-tile").click(function () {
     document.getElementById("lock-screen").style.display="block";

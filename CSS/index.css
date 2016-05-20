@@ -329,7 +329,7 @@ IMG.displayed {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #29c7ca;
   transition: .4s;
   border-radius: 34px;
 }
@@ -339,7 +339,7 @@ IMG.displayed {
   content: "";
   height: 19px;
   width: 19px;
-  left: 4px;
+  left: 57px;
   bottom: 3px;
   background-color: white;
   transition: .4s;
@@ -347,7 +347,7 @@ IMG.displayed {
 }
 
 input:checked + .slider {
-  background-color: #29c7ca;
+  background-color: #ccc;
 }
 
 input:focus + .slider {
@@ -355,5 +355,5 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translateX(53px);
+  transform: translateX(-53px);
 }
