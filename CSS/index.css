@@ -138,6 +138,10 @@
   margin: 0;
 }
 
+.motion-col {
+  padding-top: 20px;
+}
+
 #surveillance-image {
   display: block;
   margin: auto;
