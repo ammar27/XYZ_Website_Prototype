@@ -119,10 +119,17 @@
 .lock-unlock-text {
   text-align: center;
   font-size: 14px;
+  font-weight: bold;
+  color: #2b78c2;
+}
+
+#bed-motion-detected {
+  color: #e7604a;
 }
 
 .surveillance-on-off-text {
   font-size: 14px;
+  font-weight: bold;
   text-align: right;
   padding-right: 20px;
 }
