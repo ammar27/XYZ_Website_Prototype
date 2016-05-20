@@ -149,14 +149,14 @@
   padding-top: 20px;
 }
 
-#surveillance-image {
+.surveillance-image {
   display: block;
   margin: auto;
   margin-bottom: 7px;
   margin-top: -10px;
 }
 
-#lock-image {
+.lock-image {
   display: block;
   margin: auto;
 }

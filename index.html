@@ -115,7 +115,7 @@
         <div class="col-sm-4 indiv-tile">
           <div class="lock-tile">
             <div class="lock-tile-header"><h4 id="lock-tile-header-text">Front Door</h4></div>
-            <img id="lock-image" src="Images/locked-icon.png" alt="<Missing Image>" width="15%">
+            <img class="lock-image" id="front-lock" src="Images/locked-icon.png" alt="<Missing Image>" width="15%">
             <div>
               <h4 class="lock-unlock-text" id="front-door-lock">LOCKED</h4>
               <label class="switch"><input type="checkbox"><div id="front-door-lock-slider" class="slider round"></div></label>
@@ -126,7 +126,7 @@
         <div class="col-sm-4 indiv-tile">
           <div class="lock-tile">
             <div class="lock-tile-header"><h4 id="lock-tile-header-text">Back Door</h4></div>
-            <img id="lock-image" src="Images/locked-icon.png" alt="<Missing Image>" width="15%">
+            <img class="lock-image" id="back-lock" src="Images/locked-icon.png" alt="<Missing Image>" width="15%">
             <div>
               <h4 class="lock-unlock-text" id="back-door-lock">LOCKED</h4>
               <label class="switch"><input type="checkbox"><div id="back-door-lock-slider" class="slider round"></div></label>
@@ -137,7 +137,7 @@
         <div class="col-sm-4 indiv-tile">
           <div class="lock-tile">
             <div class="lock-tile-header"><h4 id="lock-tile-header-text">Garage Door</h4></div>
-            <img id="lock-image" src="Images/locked-icon.png" alt="<Missing Image>" width="15%">
+            <img class="lock-image" id="garage-lock" src="Images/locked-icon.png" alt="<Missing Image>" width="15%">
             <div>
               <h4 class="lock-unlock-text" id="garage-door-lock">LOCKED</h4>
               <label class="switch"><input type="checkbox"><div id="garage-door-lock-slider" class="slider round"></div></label>
@@ -150,7 +150,7 @@
         <div class="col-sm-4 indiv-tile">
           <div class="lock-tile">
             <div class="lock-tile-header"><h4 id="lock-tile-header-text">Deck Door</h4></div>
-            <img id="lock-image" src="Images/locked-icon.png" alt="<Missing Image>" width="15%">
+            <img class="lock-image" id="deck-lock" src="Images/locked-icon.png" alt="<Missing Image>" width="15%">
             <div>
               <h4 class="lock-unlock-text" id="deck-door-lock">LOCKED</h4>
               <label class="switch"><input type="checkbox"><div id="deck-door-lock-slider" class="slider round"></div></label>
@@ -169,8 +169,8 @@
           <div class="lock-tile">
             <div class="lock-tile-header"><h4 id="lock-tile-header-text">Living Room</h4></div>
             <div class="col-xs-6">
-              <img id="lock-image" src="Images/motion-sensor-icon.png" alt="<Missing Image>" width="50%">
-              <div><h4 class="lock-unlock-text" id="front-door-lock">NO MOTION</h4></div>
+              <img class="lock-image" id="motion-living-img" src="Images/motion-sensor-icon.png" alt="<Missing Image>" width="50%">
+              <div><h4 class="lock-unlock-text" id="motion-living-det">NO MOTION</h4></div>
             </div>
             <div class="col-xs-6 motion-col">
               <div>
@@ -185,8 +185,8 @@
           <div class="lock-tile">
             <div class="lock-tile-header"><h4 id="lock-tile-header-text">Kitchen</h4></div>
             <div class="col-xs-6">
-              <img id="lock-image" src="Images/motion-sensor-icon.png" alt="<Missing Image>" width="50%">
-              <div><h4 class="lock-unlock-text" id="front-door-lock">NO MOTION</h4></div>
+              <img class="lock-image" id="motion-kitchen-img" src="Images/motion-sensor-icon.png" alt="<Missing Image>" width="50%">
+              <div><h4 class="lock-unlock-text" id="motion-kitchen-det">NO MOTION</h4></div>
             </div>
             <div class="col-xs-6 motion-col">
               <div>
@@ -201,8 +201,8 @@
           <div class="lock-tile">
             <div class="lock-tile-header"><h4 id="lock-tile-header-text">Master Bedroom</h4></div>
             <div class="col-xs-6">
-              <img id="lock-image" src="Images/motion-sensor-icon.png" alt="<Missing Image>" width="50%">
-              <div><h4 class="lock-unlock-text" id="bed-motion-detected">MOTION DETECTED</h4></div>
+              <img class="lock-image" id="motion-bed-img" src="Images/motion-sensor-icon.png" alt="<Missing Image>" width="50%">
+              <div><h4 class="lock-unlock-text" id="motion-bed-det">NO MOTION</h4></div>
             </div>
             <div class="col-xs-6 motion-col">
               <div>
@@ -219,8 +219,8 @@
           <div class="lock-tile">
             <div class="lock-tile-header"><h4 id="lock-tile-header-text">Entrance Way</h4></div>
             <div class="col-xs-6">
-              <img id="lock-image" src="Images/motion-sensor-icon.png" alt="<Missing Image>" width="50%">
-              <div><h4 class="lock-unlock-text" id="front-door-lock">NO MOTION</h4></div>
+              <img class="lock-image" id="motion-entrance-img" src="Images/motion-sensor-icon.png" alt="<Missing Image>" width="50%">
+              <div><h4 class="lock-unlock-text" id="motion-entrance-det">NO MOTION</h4></div>
             </div>
             <div class="col-xs-6 motion-col">
               <div>
@@ -241,7 +241,7 @@
         <div class="col-sm-4 indiv-tile">
           <div class="surveillance-tile">
             <div class="lock-tile-header"><h4 id="lock-tile-header-text">Living Room</h4></div>
-            <img id="surveillance-image" src="Images/living-room.jpg" alt="<Missing Image>" width="100%" height="auto">
+            <img class="surveillance-image" id="surv-living-img" src="Images/living-room.jpg" alt="<Missing Image>" width="100%" height="auto">
             <div class="row">
               <div class="col-xs-6"><h4 class="surveillance-on-off-text" id="surv-living-text">ON</h4></div>
               <div class="col-xs-6" id="col-xs-6-surv">
@@ -254,7 +254,7 @@
         <div class="col-sm-4 indiv-tile">
           <div class="surveillance-tile">
             <div class="lock-tile-header"><h4 id="lock-tile-header-text">Entrance Way</h4></div>
-            <img id="surveillance-image" src="Images/living-room.jpg" alt="<Missing Image>" width="100%" height="auto">
+            <img class="surveillance-image" id="surv-entrance-img" src="Images/living-room.jpg" alt="<Missing Image>" width="100%" height="auto">
             <div class="row">
               <div class="col-xs-6"><h4 class="surveillance-on-off-text" id="surv-entrance-text">ON</h4></div>
               <div class="col-xs-6" id="col-xs-6-surv">
@@ -267,7 +267,7 @@
         <div class="col-sm-4 indiv-tile">
           <div class="surveillance-tile">
             <div class="lock-tile-header"><h4 id="lock-tile-header-text">Master Bedroom</h4></div>
-            <img id="surveillance-image" src="Images/living-room.jpg" alt="<Missing Image>" width="100%" height="auto">
+            <img class="surveillance-image" id="surv-bed-img" src="Images/living-room.jpg" alt="<Missing Image>" width="100%" height="auto">
             <div class="row">
               <div class="col-xs-6"><h4 class="surveillance-on-off-text" id="surv-bed-text">ON</h4></div>
               <div class="col-xs-6" id="col-xs-6-surv">
@@ -282,7 +282,7 @@
         <div class="col-sm-4 indiv-tile">
           <div class="surveillance-tile">
             <div class="lock-tile-header"><h4 id="lock-tile-header-text">Kitchen</h4></div>
-            <img id="surveillance-image" src="Images/living-room.jpg" alt="<Missing Image>" width="100%" height="auto">
+            <img class="surveillance-image" id="surv-kitchen-img" src="Images/living-room.jpg" alt="<Missing Image>" width="100%" height="auto">
             <div class="row">
               <div class="col-xs-6"><h4 class="surveillance-on-off-text" id="surv-kitchen-text">ON</h4></div>
               <div class="col-xs-6" id="col-xs-6-surv">
