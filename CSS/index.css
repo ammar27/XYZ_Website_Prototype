@@ -342,6 +342,14 @@ IMG.displayed {
   to { opacity: 1; }
 }
 
+.alert-link {
+  color: #2b78c2;
+}
+
+.alert-link:hover {
+  color: #ffffff;
+}
+
 .surveillance-tile {
   padding: 0px;
   margin-top: 45px;

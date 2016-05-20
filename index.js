@@ -96,6 +96,8 @@ $(document).ready(function() {
       document.getElementById("front-lock").src = "Images/unlocked-icon.png";
       document.getElementById("front-door-alert").style.display = "block";
       document.getElementById("bed-motion-alert").style.display = "block";
+      document.getElementById("motion-bed-det").innerHTML = "MOTION DETECTED";
+      document.getElementById("motion-bed-det").style.color = "#e7604a";
       document.getElementById("num-alert").innerHTML = "3"
     } else {
       lock.innerHTML = "LOCKED"; lock.style.color = "#2b78c2";
