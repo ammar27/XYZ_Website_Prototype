@@ -89,9 +89,15 @@ $(document).ready(function() {
     if (lock.innerHTML === "LOCKED") {
       lock.innerHTML = "UNLOCKED"; lock.style.color = "#e7604a";
       document.getElementById("front-lock").src = "Images/unlocked-icon.png";
+      document.getElementById("front-door-alert").style.display = "block";
+      document.getElementById("bed-motion-alert").style.display = "block";
+      document.getElementById("num-alert").innerHTML = "3"
     } else {
       lock.innerHTML = "LOCKED"; lock.style.color = "#2b78c2";
       document.getElementById("front-lock").src = "Images/locked-icon.png";
+      document.getElementById("front-door-alert").style.display = "none";
+      document.getElementById("bed-motion-alert").style.display = "block";
+      document.getElementById("num-alert").innerHTML = "2"
     }
   });
 

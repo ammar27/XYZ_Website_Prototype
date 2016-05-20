@@ -116,6 +116,14 @@
   color: #ffffff;
 }
 
+#front-door-alert {
+  display: none;
+}
+
+#bed-motion-alert {
+  display: none;
+}
+
 .surv-enlarge-text {
   background-color: #e4e3e3;
   font-size: 12px;
