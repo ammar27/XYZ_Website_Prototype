@@ -35,7 +35,8 @@ $(document).ready(function() {
   });
 
   $(".unresponsive-button").click(function () {
-    alert("Sorry but the functionality for this is excluded in this prototype");
+    // Sweet alert functionality obtained from http://t4t5.github.io/sweetalert/
+    sweetAlert("Sorry...", "The functionality for this feature is disabled for the prototype", "error");
   });
 
   // Function to enlarge the images, source: http://dimsemenov.com/plugins/magnific-popup/documentation.html
