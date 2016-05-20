@@ -34,9 +34,31 @@ $(document).ready(function() {
     document.getElementById("lock-screen").style.display="none";
   });
 
+  // Function to enlarge the images, source: http://dimsemenov.com/plugins/magnific-popup/documentation.html
   $("#living-enlarge").magnificPopup({
     items: {
       src: "Images/living-room.jpg"
+    },
+    type: "image" // this is default type
+  });
+
+  $("#entrance-enlarge").magnificPopup({
+    items: {
+      src: "Images/entrance.jpg"
+    },
+    type: "image" // this is default type
+  });
+
+  $("#kitchen-enlarge").magnificPopup({
+    items: {
+      src: "Images/kitchen.jpg"
+    },
+    type: "image" // this is default type
+  });
+
+  $("#bedroom-enlarge").magnificPopup({
+    items: {
+      src: "Images/bedroom.jpg"
     },
     type: "image" // this is default type
   });
