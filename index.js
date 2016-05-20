@@ -34,6 +34,10 @@ $(document).ready(function() {
     document.getElementById("lock-screen").style.display="none";
   });
 
+  $(".unresponsive-button").click(function () {
+    alert("Sorry but the functionality for this is excluded in this prototype");
+  });
+
   // Function to enlarge the images, source: http://dimsemenov.com/plugins/magnific-popup/documentation.html
   $("#living-enlarge").magnificPopup({
     items: {
