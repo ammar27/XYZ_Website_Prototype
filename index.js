@@ -26,6 +26,21 @@ $(document).ready(function() {
     document.getElementById("lock-screen").style.display="none";
   });
 
+  // Function for replacing current screen with the dashboard screen
+  $(".back-button").click(function () {
+    document.getElementById("dashboard-screen").style.display="block";
+    document.getElementById("surveillance-screen").style.display="none";
+    document.getElementById("motion-sensors-screen").style.display="none";
+    document.getElementById("lock-screen").style.display="none";
+  });
+
+  $("#living-enlarge").magnificPopup({
+    items: {
+      src: "Images/living-room.jpg"
+    },
+    type: "image" // this is default type
+  });
+
   // Obtains properties for door locks and changes state based on previous state
   $("#front-door-lock-slider").click(function () {
     var lock = document.getElementById("front-door-lock");

@@ -8,10 +8,17 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <!-- Magnific Popup core JS file -->
+  <script src="magnific-popup.js"></script>
   <!-- Importing javascript to enable site navigation-->
   <script src="index.js"></script>
   <!-- Adding custom style sheet -->
   <link rel="stylesheet" href="CSS/index.css"/>
+
+  <!-- Magnific Popup core CSS file -->
+  <link rel="stylesheet" href="CSS/magnific-popup.css">
+
 
 </head>
 <body>
@@ -248,7 +255,9 @@
                 <label class="switch" id="surv-switch"><input type="checkbox"><div class="slider round" id="surv-living-slider"></div></label>
               </div>
             </div>
-            <div class="lock-tile-header"><h4 id="lock-timer-text">Set Timer<span class="glyphicon glyphicon-chevron-right"></span></h4></div>
+            <div class="lock-tile-header">
+              <h4 class="surv-enlarge-text" id="living-enlarge">Click to Enlarge<span class="glyphicon glyphicon-chevron-right"></span></h4>
+            </div>
           </div>
         </div>
         <div class="col-sm-4 indiv-tile">
@@ -261,7 +270,7 @@
                 <label class="switch" id="surv-switch"><input type="checkbox"><div class="slider round" id="surv-entrance-slider"></div></label>
               </div>
             </div>
-            <div class="lock-tile-header"><h4 id="lock-timer-text">Set Timer<span class="glyphicon glyphicon-chevron-right"></span></h4></div>
+            <div class="lock-tile-header"><h4 class="surv-enlarge-text">Click to Enlarge<span class="glyphicon glyphicon-chevron-right"></span></h4></div>
           </div>
         </div>
         <div class="col-sm-4 indiv-tile">
@@ -274,7 +283,7 @@
                 <label class="switch" id="surv-switch"><input type="checkbox"><div class="slider round" id="surv-bed-slider"></div></label>
               </div>
             </div>
-            <div class="lock-tile-header"><h4 id="lock-timer-text">Set Timer<span class="glyphicon glyphicon-chevron-right"></span></h4></div>
+            <div class="lock-tile-header"><h4 class="surv-enlarge-text">Click to Enlarge<span class="glyphicon glyphicon-chevron-right"></span></h4></div>
           </div>
         </div>
       </div>
@@ -289,7 +298,7 @@
                 <label class="switch" id="surv-switch"><input type="checkbox"><div class="slider round" id="surv-kitchen-slider"></div></label>
               </div>
             </div>
-            <div class="lock-tile-header"><h4 id="lock-timer-text">Set Timer<span class="glyphicon glyphicon-chevron-right"></span></h4></div>
+            <div class="lock-tile-header"><h4 class="surv-enlarge-text">Click to Enlarge<span class="glyphicon glyphicon-chevron-right"></span></h4></div>
           </div>
         </div>
       </div>
