@@ -221,7 +221,7 @@ $(document).ready(function() {
       document.getElementById("surv-bed-img").src = "Images/camera-off-icon.png";
     } else {
       switchText.innerHTML = "ON"; switchText.style.color = "#2b78c2";
-      document.getElementById("surv-bed-img").src = "Images/living-room.jpg";
+      document.getElementById("surv-bed-img").src = "Images/bedroom.jpg";
     }
   });
 
@@ -232,7 +232,7 @@ $(document).ready(function() {
       document.getElementById("surv-entrance-img").src = "Images/camera-off-icon.png";
     } else {
       switchText.innerHTML = "ON"; switchText.style.color = "#2b78c2";
-      document.getElementById("surv-entrance-img").src = "Images/living-room.jpg";
+      document.getElementById("surv-entrance-img").src = "Images/entrance.jpg";
     }
   });
 
@@ -243,7 +243,7 @@ $(document).ready(function() {
       document.getElementById("surv-kitchen-img").src = "Images/camera-off-icon.png";
     } else {
       switchText.innerHTML = "ON"; switchText.style.color = "#2b78c2";
-      document.getElementById("surv-kitchen-img").src = "Images/living-room.jpg";
+      document.getElementById("surv-kitchen-img").src = "Images/kitchen.jpg";
     }
   });
 });
