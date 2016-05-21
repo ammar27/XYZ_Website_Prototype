@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-  // Enabling tool tips
-  $('[data-toggle="tooltip"]').tooltip(); 
+  // Enabling boostrap tool tips
+  $('[data-toggle="tooltip"]').tooltip();
 
   // Function for replacing dashboard div with door locks div
   $("#door-tile").click(function () {
