@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+  // Enabling tool tips
+  $('[data-toggle="tooltip"]').tooltip(); 
+
   // Function for replacing dashboard div with door locks div
   $("#door-tile").click(function () {
     document.getElementById("lock-screen").style.display="block";
