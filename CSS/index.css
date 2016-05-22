@@ -29,15 +29,6 @@
   margin-right: 30px;
 }
 
-#nav-text {
-  transition: padding 0.3s ease-out;
-}
-
-#nav-text:hover {
-  padding-top: 10px;
-  color: #29c7ca;
-}
-
 #dashboard-bg {
   margin-top: 0px;
   padding-bottom: 21vh;
@@ -366,6 +357,24 @@ IMG.displayed {
   cursor: pointer;
 }
 
+#nav-dashboard-button {
+  cursor: pointer;
+  transition: padding 0.3s ease-out;
+}
+
+#nav-dashboard-button:hover {
+  padding-top: 10px;
+  color: #29c7ca;
+}
+
+#nav-text {
+  transition: padding 0.3s ease-out;
+}
+
+#nav-text:hover {
+  padding-top: 10px;
+  color: #29c7ca;
+}
 
 /* On/off toggle slider components obtained from: http://www.w3schools.com/howto/howto_css_switch.asp */
 .switch {

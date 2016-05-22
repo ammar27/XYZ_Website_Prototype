@@ -30,7 +30,7 @@ $(document).ready(function() {
   });
 
   // Function for replacing current screen with the dashboard screen
-  $(".back-button").click(function () {
+  $("#nav-dashboard-button").click(function () {
     document.getElementById("dashboard-screen").style.display="block";
     document.getElementById("surveillance-screen").style.display="none";
     document.getElementById("motion-sensors-screen").style.display="none";
